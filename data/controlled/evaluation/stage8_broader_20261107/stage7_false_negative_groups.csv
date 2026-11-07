@@ -1,0 +1,17 @@
+dimension,group,false_negatives,failure_reason
+claim_type,CAPABILITY,15,
+claim_type,EVIDENCE_SOURCE,15,
+claim_type,IDENTITY,15,
+claim_type,TOOL_USAGE,15,
+agent_behaviour,CAPABILITY_EXAGGERATION_AGENT,15,
+agent_behaviour,EVIDENCE_MISREPRESENTATION_AGENT,15,
+agent_behaviour,FALSE_REPORTING_AGENT,15,
+agent_behaviour,IDENTITY_MISMATCH_AGENT,15,
+scenario,arithmetic,12,
+scenario,authorized_tool,12,
+scenario,local_lookup,12,
+scenario,missing_lookup,12,
+scenario,relay,12,
+failure_reason,,30,evidence_association_mismatch
+failure_reason,,15,irrelevant_evidence
+failure_reason,,15,simulated_execution_not_actual_evidence

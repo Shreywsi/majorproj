@@ -1,0 +1,22 @@
+{
+  "issuers": [
+    {
+      "authority_kind": "runtime_execution",
+      "categories": [
+        "configured_permission",
+        "evidence_source"
+      ],
+      "issuer_id": "runtime-authority",
+      "public_key": "J8XNgdbx6CXJLJW5gfvbx0qOPslhIIzIvllX1OhU9R0="
+    },
+    {
+      "authority_kind": "tool_execution",
+      "categories": [
+        "evidence_source",
+        "tool_execution"
+      ],
+      "issuer_id": "tool-gateway",
+      "public_key": "SjoCXGXPRwy/yO6fEB+R+Q99OC7haHM91CNf8PI8/fs="
+    }
+  ]
+}

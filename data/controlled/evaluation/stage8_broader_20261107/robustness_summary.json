@@ -1,0 +1,113 @@
+{
+  "replayed_evidence": {
+    "limitation": "Not mutated in a persisted runtime dataset: the source artifacts contain no trusted issuer private key to create a second valid signed record with a replayed nonce.",
+    "status": "verified_by_existing_stage7b_test"
+  },
+  "variants": [
+    {
+      "case": "missing_evidence",
+      "detector_outcome_counts": {
+        "CONTRADICTED": 1,
+        "INSUFFICIENT_EVIDENCE": 136,
+        "SUPPORTED": 4,
+        "UNSUPPORTED": 24
+      },
+      "evidence_association_failure_counts": {
+        "evidence_not_relevant": 10,
+        "evidence_relationship_mismatch": 5,
+        "missing": 1,
+        "scope_mismatch": 24
+      },
+      "evidence_association_status_counts": {
+        "evidence_not_relevant": 10,
+        "evidence_relationship_mismatch": 5,
+        "missing": 1,
+        "scope_mismatch": 24,
+        "valid": 105
+      },
+      "evidence_verification_failure_counts": {},
+      "evidence_verification_status_counts": {
+        "valid": 104
+      }
+    },
+    {
+      "case": "invalid_signature",
+      "detector_outcome_counts": {
+        "CONTRADICTED": 1,
+        "INSUFFICIENT_EVIDENCE": 135,
+        "SUPPORTED": 4,
+        "UNSUPPORTED": 25
+      },
+      "evidence_association_failure_counts": {
+        "evidence_not_relevant": 10,
+        "evidence_relationship_mismatch": 5,
+        "scope_mismatch": 25
+      },
+      "evidence_association_status_counts": {
+        "evidence_not_relevant": 10,
+        "evidence_relationship_mismatch": 5,
+        "scope_mismatch": 25,
+        "valid": 105
+      },
+      "evidence_verification_failure_counts": {
+        "invalid_signature": 1
+      },
+      "evidence_verification_status_counts": {
+        "invalid_signature": 1,
+        "valid": 104
+      }
+    },
+    {
+      "case": "untrusted_issuer",
+      "detector_outcome_counts": {
+        "CONTRADICTED": 1,
+        "INSUFFICIENT_EVIDENCE": 110,
+        "SUPPORTED": 4,
+        "UNSUPPORTED": 50
+      },
+      "evidence_association_failure_counts": {
+        "evidence_not_relevant": 10,
+        "evidence_relationship_mismatch": 5,
+        "scope_mismatch": 25,
+        "untrusted_issuer": 25
+      },
+      "evidence_association_status_counts": {
+        "evidence_not_relevant": 10,
+        "evidence_relationship_mismatch": 5,
+        "scope_mismatch": 25,
+        "untrusted_issuer": 25,
+        "valid": 80
+      },
+      "evidence_verification_failure_counts": {
+        "untrusted_issuer": 50
+      },
+      "evidence_verification_status_counts": {
+        "untrusted_issuer": 50,
+        "valid": 55
+      }
+    },
+    {
+      "case": "expired",
+      "detector_outcome_counts": {
+        "CONTRADICTED": 1,
+        "INSUFFICIENT_EVIDENCE": 15,
+        "SUPPORTED": 4,
+        "UNSUPPORTED": 145
+      },
+      "evidence_association_failure_counts": {
+        "expired": 120,
+        "scope_mismatch": 25
+      },
+      "evidence_association_status_counts": {
+        "expired": 120,
+        "scope_mismatch": 25
+      },
+      "evidence_verification_failure_counts": {
+        "expired": 105
+      },
+      "evidence_verification_status_counts": {
+        "expired": 105
+      }
+    }
+  ]
+}

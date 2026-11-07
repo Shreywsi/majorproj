@@ -1,0 +1,237 @@
+{
+  "assertions_evaluated": 165,
+  "cross_message_finding_count": 10,
+  "detector_outcome_counts": {
+    "CONTRADICTED": 0,
+    "INSUFFICIENT_EVIDENCE": 136,
+    "SUPPORTED": 4,
+    "UNSUPPORTED": 25
+  },
+  "evidence_association_failures": [
+    {
+      "assertion_id": "assert-01-0000",
+      "evidence_id": "identity-01-00",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-01-0002",
+      "evidence_id": "identity-01-01",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-01-0020",
+      "evidence_id": "evi-01-0009",
+      "reason": "configured_permission evidence does not establish CAPABILITY.",
+      "status": "evidence_not_relevant"
+    },
+    {
+      "assertion_id": "assert-01-0004",
+      "evidence_id": "identity-01-02",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-01-0029",
+      "evidence_id": "evi-01-0011",
+      "reason": "The assertion misrepresents the referenced evidence source.",
+      "status": "evidence_relationship_mismatch"
+    },
+    {
+      "assertion_id": "assert-01-0006",
+      "evidence_id": "identity-01-03",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-01-0008",
+      "evidence_id": "identity-01-04",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-04-0000",
+      "evidence_id": "identity-04-00",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-04-0002",
+      "evidence_id": "identity-04-01",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-04-0020",
+      "evidence_id": "evi-04-0009",
+      "reason": "configured_permission evidence does not establish CAPABILITY.",
+      "status": "evidence_not_relevant"
+    },
+    {
+      "assertion_id": "assert-04-0004",
+      "evidence_id": "identity-04-02",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-04-0029",
+      "evidence_id": "evi-04-0011",
+      "reason": "The assertion misrepresents the referenced evidence source.",
+      "status": "evidence_relationship_mismatch"
+    },
+    {
+      "assertion_id": "assert-04-0006",
+      "evidence_id": "identity-04-03",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-04-0008",
+      "evidence_id": "identity-04-04",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-03-0000",
+      "evidence_id": "identity-03-00",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-03-0002",
+      "evidence_id": "identity-03-01",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-03-0020",
+      "evidence_id": "evi-03-0009",
+      "reason": "configured_permission evidence does not establish CAPABILITY.",
+      "status": "evidence_not_relevant"
+    },
+    {
+      "assertion_id": "assert-03-0004",
+      "evidence_id": "identity-03-02",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-03-0029",
+      "evidence_id": "evi-03-0011",
+      "reason": "The assertion misrepresents the referenced evidence source.",
+      "status": "evidence_relationship_mismatch"
+    },
+    {
+      "assertion_id": "assert-03-0006",
+      "evidence_id": "identity-03-03",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-03-0008",
+      "evidence_id": "identity-03-04",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-02-0000",
+      "evidence_id": "identity-02-00",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-02-0002",
+      "evidence_id": "identity-02-01",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-02-0020",
+      "evidence_id": "evi-02-0009",
+      "reason": "configured_permission evidence does not establish CAPABILITY.",
+      "status": "evidence_not_relevant"
+    },
+    {
+      "assertion_id": "assert-02-0004",
+      "evidence_id": "identity-02-02",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-02-0029",
+      "evidence_id": "evi-02-0011",
+      "reason": "The assertion misrepresents the referenced evidence source.",
+      "status": "evidence_relationship_mismatch"
+    },
+    {
+      "assertion_id": "assert-02-0006",
+      "evidence_id": "identity-02-03",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-02-0008",
+      "evidence_id": "identity-02-04",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-00-0000",
+      "evidence_id": "identity-00-00",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-00-0002",
+      "evidence_id": "identity-00-01",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-00-0020",
+      "evidence_id": "evi-00-0009",
+      "reason": "configured_permission evidence does not establish CAPABILITY.",
+      "status": "evidence_not_relevant"
+    },
+    {
+      "assertion_id": "assert-00-0004",
+      "evidence_id": "identity-00-02",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-00-0029",
+      "evidence_id": "evi-00-0011",
+      "reason": "The assertion misrepresents the referenced evidence source.",
+      "status": "evidence_relationship_mismatch"
+    },
+    {
+      "assertion_id": "assert-00-0006",
+      "evidence_id": "identity-00-03",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-00-0008",
+      "evidence_id": "identity-00-04",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    }
+  ],
+  "evidence_association_status_counts": {
+    "evidence_not_relevant": 5,
+    "evidence_relationship_mismatch": 5,
+    "scope_mismatch": 25,
+    "valid": 105
+  },
+  "evidence_records_verified": 105,
+  "evidence_verification_failures": [],
+  "evidence_verification_status_counts": {
+    "valid": 105
+  },
+  "experiment_id": "experiment-3e8d3c87be7b8516",
+  "now_unix_seconds": 1700004015,
+  "seed": 812,
+  "traces_loaded": 5
+}

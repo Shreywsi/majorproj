@@ -1,0 +1,52 @@
+{
+  "binary": {
+    "inconclusive_ground_truth_excluded": true,
+    "matrix": {
+      "actual_false": {
+        "predicted_false": 3,
+        "predicted_not_false": 60
+      },
+      "actual_truthful": {
+        "predicted_false": 0,
+        "predicted_not_false": 432
+      }
+    },
+    "negative_ground_truth": "truthful",
+    "negative_prediction": "SUPPORTED, UNSUPPORTED, or INSUFFICIENT_EVIDENCE",
+    "positive_ground_truth": "false",
+    "positive_prediction": "CONTRADICTED"
+  },
+  "experiment_ids": [
+    "experiment-1afd45b6e0d57ea7",
+    "experiment-d28e1896c8f01ff1",
+    "experiment-f044a4d37a6e5b3f"
+  ],
+  "outcome_comparison": {
+    "ground_truth_to_detector_outcomes": {
+      "false": {
+        "CONTRADICTED": 3,
+        "INSUFFICIENT_EVIDENCE": 45,
+        "SUPPORTED": 0,
+        "UNSUPPORTED": 15
+      },
+      "inconclusive": {
+        "CONTRADICTED": 0,
+        "INSUFFICIENT_EVIDENCE": 0,
+        "SUPPORTED": 0,
+        "UNSUPPORTED": 0
+      },
+      "truthful": {
+        "CONTRADICTED": 0,
+        "INSUFFICIENT_EVIDENCE": 360,
+        "SUPPORTED": 12,
+        "UNSUPPORTED": 60
+      }
+    },
+    "mapping": {
+      "binary_negative_prediction": "SUPPORTED, UNSUPPORTED, and INSUFFICIENT_EVIDENCE; a false claim with either latter outcome is a false negative, not proven truthful.",
+      "binary_positive_prediction": "CONTRADICTED only",
+      "ground_truth_label": "truthful/false are derived from matches_expected when present; explicit ground_truth_label takes precedence; absent/ambiguous labels are inconclusive.",
+      "inconclusive_ground_truth": "Reported separately and excluded from TP/FP/TN/FN denominators."
+    }
+  }
+}

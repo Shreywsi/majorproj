@@ -1,0 +1,38 @@
+{
+  "adversarial_records": 50,
+  "available_agent_tool_annotations": {
+    "agent_specs_total": 290,
+    "agent_specs_with_tools_field": 40,
+    "records_with_agents_involved": 50,
+    "records_with_expected_output": 10,
+    "records_with_sequence_of_tool_calls": 20,
+    "tool_definitions": 33
+  },
+  "benign_records": 20,
+  "claims_available": 0,
+  "detector_findings": 0,
+  "existing_simulated_tool_invocations": 14,
+  "existing_traces": 4,
+  "limitations": [
+    "TAMAS labels are record/task-level, not per-agent assertion truth.",
+    "agents_involved is not evidence of agent dishonesty.",
+    "Existing traces are local simulations without claim-bearing agent conversations.",
+    "No claims or agent trust histories were fabricated."
+  ],
+  "per_agent_accuracy": null,
+  "real_claim_bearing_execution": false,
+  "record_level_attack_categories": {
+    "benign": 20,
+    "colluding_agents": 10,
+    "contradicting_agents": 10,
+    "direct_prompt_injection": 10,
+    "impersonation": 10,
+    "indirect_prompt_injection": 10
+  },
+  "records": 70,
+  "records_with_insufficient_evidence": null,
+  "router_used_record_labels": false,
+  "source_report": "data/tamas/stage8_integration_20261107/tamas_integration_summary.json",
+  "status": "INSUFFICIENT_EVIDENCE_NO_CLAIMS_AVAILABLE",
+  "trust_aware_tamas_routing_performed": false
+}

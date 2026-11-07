@@ -52,12 +52,28 @@ class EvidenceAuthority:
         """Create an attestation after the trusted evaluator observes an outcome."""
         return self.sign(uid, k, y, t, nonce)
 
+    def sign_payload(self, payload: bytes) -> bytes:
+        """Sign canonical bytes for typed runtime evidence using this ledger key."""
+        if not isinstance(payload, bytes):
+            raise TypeError("payload must be bytes.")
+        return self.sk.sign(payload).signature
+
 
 class EvidenceVerifier:
     """Public-key-only verifier for trusted evaluator outcome attestations."""
 
     def __init__(self, verify_key: VerifyKey | bytes):
         self.vk = verify_key if isinstance(verify_key, VerifyKey) else VerifyKey(verify_key)
+
+    def verify_payload(self, payload: bytes, signature: bytes) -> bool:
+        """Verify detached canonical bytes with the ledger's Ed25519 public key."""
+        if not isinstance(payload, bytes) or not isinstance(signature, bytes):
+            return False
+        try:
+            self.vk.verify(payload, signature)
+        except (BadSignatureError, TypeError, ValueError):
+            return False
+        return True
 
     def verify(
         self,

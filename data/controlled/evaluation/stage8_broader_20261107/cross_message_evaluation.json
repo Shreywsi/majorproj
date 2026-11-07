@@ -1,0 +1,683 @@
+{
+  "confidence_intervals": {
+    "reason": "This is a deterministic scripted corpus with repeated, structurally paired task templates; assertion-level bootstrap intervals would misstate independent sample size.",
+    "status": "not_estimated"
+  },
+  "definition": {
+    "eligible_patterns": [
+      "completion_status_conflict",
+      "identity_claim_conflicts_with_sender",
+      "permission_misrepresented_as_demonstration",
+      "tool_invocation_status_conflict"
+    ],
+    "false_negative": "A sidecar-eligible contradiction pattern has no exactly matching finding.",
+    "false_positive": "A structurally valid emitted finding has no matching independently eligible, sidecar-false contradiction.",
+    "true_negative": "Not calculated: the corpus has no defensible finite universe of absent cross-message findings.",
+    "true_positive": "A finding exactly matches a sidecar-eligible contradiction pattern and all assertion/message/experiment/task/trace/agent references match."
+  },
+  "eligible_contradiction_count": 50,
+  "emitted_finding_count": 50,
+  "excluded_eligibility_counts": {
+    "capability_pair_not_independently_false": 20,
+    "false_assertion_not_eligible_for_supported_cross_rule": 51
+  },
+  "false_negative_findings": [],
+  "false_positive_findings": [],
+  "inconclusive_assertion_count": 0,
+  "metrics": {
+    "f1_score": 1.0,
+    "false_negatives": 0,
+    "false_positives": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "true_negatives": null,
+    "true_positives": 50
+  },
+  "results_by_finding_type": {
+    "identity_claim_conflicts_with_sender": {
+      "f1_score": 1.0,
+      "false_negatives": 0,
+      "false_positives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "true_negatives": null,
+      "true_positives": 25
+    },
+    "permission_misrepresented_as_demonstration": {
+      "f1_score": 1.0,
+      "false_negatives": 0,
+      "false_positives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "true_negatives": null,
+      "true_positives": 25
+    }
+  },
+  "true_positive_findings": [
+    {
+      "assertion_ids": [
+        "assert-00-0000"
+      ],
+      "contradiction_kind": "identity_claim_conflicts_with_sender",
+      "eligibility_reason": "Sidecar identity truth marks the assertion false; a separate same-agent message repeats the bound runtime identity.",
+      "experiment_id": "experiment-3e8d3c87be7b8516",
+      "message_ids": [
+        "msg-00-001",
+        "msg-00-007"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-01-0000"
+      ],
+      "contradiction_kind": "identity_claim_conflicts_with_sender",
+      "eligibility_reason": "Sidecar identity truth marks the assertion false; a separate same-agent message repeats the bound runtime identity.",
+      "experiment_id": "experiment-3e8d3c87be7b8516",
+      "message_ids": [
+        "msg-01-001",
+        "msg-01-007"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-02-0000"
+      ],
+      "contradiction_kind": "identity_claim_conflicts_with_sender",
+      "eligibility_reason": "Sidecar identity truth marks the assertion false; a separate same-agent message repeats the bound runtime identity.",
+      "experiment_id": "experiment-3e8d3c87be7b8516",
+      "message_ids": [
+        "msg-02-001",
+        "msg-02-007"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-03-0000"
+      ],
+      "contradiction_kind": "identity_claim_conflicts_with_sender",
+      "eligibility_reason": "Sidecar identity truth marks the assertion false; a separate same-agent message repeats the bound runtime identity.",
+      "experiment_id": "experiment-3e8d3c87be7b8516",
+      "message_ids": [
+        "msg-03-001",
+        "msg-03-007"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-04-0000"
+      ],
+      "contradiction_kind": "identity_claim_conflicts_with_sender",
+      "eligibility_reason": "Sidecar identity truth marks the assertion false; a separate same-agent message repeats the bound runtime identity.",
+      "experiment_id": "experiment-3e8d3c87be7b8516",
+      "message_ids": [
+        "msg-04-001",
+        "msg-04-007"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-00-0002"
+      ],
+      "contradiction_kind": "identity_claim_conflicts_with_sender",
+      "eligibility_reason": "Sidecar identity truth marks the assertion false; a separate same-agent message repeats the bound runtime identity.",
+      "experiment_id": "experiment-5ed9dce4cc2a6a04",
+      "message_ids": [
+        "msg-00-002",
+        "msg-00-008"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-01-0002"
+      ],
+      "contradiction_kind": "identity_claim_conflicts_with_sender",
+      "eligibility_reason": "Sidecar identity truth marks the assertion false; a separate same-agent message repeats the bound runtime identity.",
+      "experiment_id": "experiment-5ed9dce4cc2a6a04",
+      "message_ids": [
+        "msg-01-002",
+        "msg-01-008"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-02-0002"
+      ],
+      "contradiction_kind": "identity_claim_conflicts_with_sender",
+      "eligibility_reason": "Sidecar identity truth marks the assertion false; a separate same-agent message repeats the bound runtime identity.",
+      "experiment_id": "experiment-5ed9dce4cc2a6a04",
+      "message_ids": [
+        "msg-02-002",
+        "msg-02-008"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-03-0002"
+      ],
+      "contradiction_kind": "identity_claim_conflicts_with_sender",
+      "eligibility_reason": "Sidecar identity truth marks the assertion false; a separate same-agent message repeats the bound runtime identity.",
+      "experiment_id": "experiment-5ed9dce4cc2a6a04",
+      "message_ids": [
+        "msg-03-002",
+        "msg-03-008"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-04-0002"
+      ],
+      "contradiction_kind": "identity_claim_conflicts_with_sender",
+      "eligibility_reason": "Sidecar identity truth marks the assertion false; a separate same-agent message repeats the bound runtime identity.",
+      "experiment_id": "experiment-5ed9dce4cc2a6a04",
+      "message_ids": [
+        "msg-04-002",
+        "msg-04-008"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-00-0006"
+      ],
+      "contradiction_kind": "identity_claim_conflicts_with_sender",
+      "eligibility_reason": "Sidecar identity truth marks the assertion false; a separate same-agent message repeats the bound runtime identity.",
+      "experiment_id": "experiment-625a26824e9fb307",
+      "message_ids": [
+        "msg-00-004",
+        "msg-00-010"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-01-0006"
+      ],
+      "contradiction_kind": "identity_claim_conflicts_with_sender",
+      "eligibility_reason": "Sidecar identity truth marks the assertion false; a separate same-agent message repeats the bound runtime identity.",
+      "experiment_id": "experiment-625a26824e9fb307",
+      "message_ids": [
+        "msg-01-004",
+        "msg-01-010"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-02-0006"
+      ],
+      "contradiction_kind": "identity_claim_conflicts_with_sender",
+      "eligibility_reason": "Sidecar identity truth marks the assertion false; a separate same-agent message repeats the bound runtime identity.",
+      "experiment_id": "experiment-625a26824e9fb307",
+      "message_ids": [
+        "msg-02-004",
+        "msg-02-010"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-03-0006"
+      ],
+      "contradiction_kind": "identity_claim_conflicts_with_sender",
+      "eligibility_reason": "Sidecar identity truth marks the assertion false; a separate same-agent message repeats the bound runtime identity.",
+      "experiment_id": "experiment-625a26824e9fb307",
+      "message_ids": [
+        "msg-03-004",
+        "msg-03-010"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-04-0006"
+      ],
+      "contradiction_kind": "identity_claim_conflicts_with_sender",
+      "eligibility_reason": "Sidecar identity truth marks the assertion false; a separate same-agent message repeats the bound runtime identity.",
+      "experiment_id": "experiment-625a26824e9fb307",
+      "message_ids": [
+        "msg-04-004",
+        "msg-04-010"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-00-0008"
+      ],
+      "contradiction_kind": "identity_claim_conflicts_with_sender",
+      "eligibility_reason": "Sidecar identity truth marks the assertion false; a separate same-agent message repeats the bound runtime identity.",
+      "experiment_id": "experiment-788c7a0b765bb377",
+      "message_ids": [
+        "msg-00-005",
+        "msg-00-011"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-01-0008"
+      ],
+      "contradiction_kind": "identity_claim_conflicts_with_sender",
+      "eligibility_reason": "Sidecar identity truth marks the assertion false; a separate same-agent message repeats the bound runtime identity.",
+      "experiment_id": "experiment-788c7a0b765bb377",
+      "message_ids": [
+        "msg-01-005",
+        "msg-01-011"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-02-0008"
+      ],
+      "contradiction_kind": "identity_claim_conflicts_with_sender",
+      "eligibility_reason": "Sidecar identity truth marks the assertion false; a separate same-agent message repeats the bound runtime identity.",
+      "experiment_id": "experiment-788c7a0b765bb377",
+      "message_ids": [
+        "msg-02-005",
+        "msg-02-011"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-03-0008"
+      ],
+      "contradiction_kind": "identity_claim_conflicts_with_sender",
+      "eligibility_reason": "Sidecar identity truth marks the assertion false; a separate same-agent message repeats the bound runtime identity.",
+      "experiment_id": "experiment-788c7a0b765bb377",
+      "message_ids": [
+        "msg-03-005",
+        "msg-03-011"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-04-0008"
+      ],
+      "contradiction_kind": "identity_claim_conflicts_with_sender",
+      "eligibility_reason": "Sidecar identity truth marks the assertion false; a separate same-agent message repeats the bound runtime identity.",
+      "experiment_id": "experiment-788c7a0b765bb377",
+      "message_ids": [
+        "msg-04-005",
+        "msg-04-011"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-00-0004"
+      ],
+      "contradiction_kind": "identity_claim_conflicts_with_sender",
+      "eligibility_reason": "Sidecar identity truth marks the assertion false; a separate same-agent message repeats the bound runtime identity.",
+      "experiment_id": "experiment-e01d9bfcdbc26996",
+      "message_ids": [
+        "msg-00-003",
+        "msg-00-009"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-01-0004"
+      ],
+      "contradiction_kind": "identity_claim_conflicts_with_sender",
+      "eligibility_reason": "Sidecar identity truth marks the assertion false; a separate same-agent message repeats the bound runtime identity.",
+      "experiment_id": "experiment-e01d9bfcdbc26996",
+      "message_ids": [
+        "msg-01-003",
+        "msg-01-009"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-02-0004"
+      ],
+      "contradiction_kind": "identity_claim_conflicts_with_sender",
+      "eligibility_reason": "Sidecar identity truth marks the assertion false; a separate same-agent message repeats the bound runtime identity.",
+      "experiment_id": "experiment-e01d9bfcdbc26996",
+      "message_ids": [
+        "msg-02-003",
+        "msg-02-009"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-03-0004"
+      ],
+      "contradiction_kind": "identity_claim_conflicts_with_sender",
+      "eligibility_reason": "Sidecar identity truth marks the assertion false; a separate same-agent message repeats the bound runtime identity.",
+      "experiment_id": "experiment-e01d9bfcdbc26996",
+      "message_ids": [
+        "msg-03-003",
+        "msg-03-009"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-04-0004"
+      ],
+      "contradiction_kind": "identity_claim_conflicts_with_sender",
+      "eligibility_reason": "Sidecar identity truth marks the assertion false; a separate same-agent message repeats the bound runtime identity.",
+      "experiment_id": "experiment-e01d9bfcdbc26996",
+      "message_ids": [
+        "msg-04-003",
+        "msg-04-009"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-00-0013",
+        "assert-00-0020"
+      ],
+      "contradiction_kind": "permission_misrepresented_as_demonstration",
+      "eligibility_reason": "Sidecar truth confirms configured permission but rejects the positive demonstrated-capability assertion; no matching same-agent invocation is recorded.",
+      "experiment_id": "experiment-3e8d3c87be7b8516",
+      "message_ids": [
+        "msg-00-008",
+        "msg-00-012"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-01-0013",
+        "assert-01-0020"
+      ],
+      "contradiction_kind": "permission_misrepresented_as_demonstration",
+      "eligibility_reason": "Sidecar truth confirms configured permission but rejects the positive demonstrated-capability assertion; no matching same-agent invocation is recorded.",
+      "experiment_id": "experiment-3e8d3c87be7b8516",
+      "message_ids": [
+        "msg-01-008",
+        "msg-01-012"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-02-0013",
+        "assert-02-0020"
+      ],
+      "contradiction_kind": "permission_misrepresented_as_demonstration",
+      "eligibility_reason": "Sidecar truth confirms configured permission but rejects the positive demonstrated-capability assertion; no matching same-agent invocation is recorded.",
+      "experiment_id": "experiment-3e8d3c87be7b8516",
+      "message_ids": [
+        "msg-02-008",
+        "msg-02-012"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-03-0013",
+        "assert-03-0020"
+      ],
+      "contradiction_kind": "permission_misrepresented_as_demonstration",
+      "eligibility_reason": "Sidecar truth confirms configured permission but rejects the positive demonstrated-capability assertion; no matching same-agent invocation is recorded.",
+      "experiment_id": "experiment-3e8d3c87be7b8516",
+      "message_ids": [
+        "msg-03-008",
+        "msg-03-012"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-04-0013",
+        "assert-04-0020"
+      ],
+      "contradiction_kind": "permission_misrepresented_as_demonstration",
+      "eligibility_reason": "Sidecar truth confirms configured permission but rejects the positive demonstrated-capability assertion; no matching same-agent invocation is recorded.",
+      "experiment_id": "experiment-3e8d3c87be7b8516",
+      "message_ids": [
+        "msg-04-008",
+        "msg-04-012"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-00-0015",
+        "assert-00-0020"
+      ],
+      "contradiction_kind": "permission_misrepresented_as_demonstration",
+      "eligibility_reason": "Sidecar truth confirms configured permission but rejects the positive demonstrated-capability assertion; no matching same-agent invocation is recorded.",
+      "experiment_id": "experiment-5ed9dce4cc2a6a04",
+      "message_ids": [
+        "msg-00-009",
+        "msg-00-012"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-01-0015",
+        "assert-01-0020"
+      ],
+      "contradiction_kind": "permission_misrepresented_as_demonstration",
+      "eligibility_reason": "Sidecar truth confirms configured permission but rejects the positive demonstrated-capability assertion; no matching same-agent invocation is recorded.",
+      "experiment_id": "experiment-5ed9dce4cc2a6a04",
+      "message_ids": [
+        "msg-01-009",
+        "msg-01-012"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-02-0015",
+        "assert-02-0020"
+      ],
+      "contradiction_kind": "permission_misrepresented_as_demonstration",
+      "eligibility_reason": "Sidecar truth confirms configured permission but rejects the positive demonstrated-capability assertion; no matching same-agent invocation is recorded.",
+      "experiment_id": "experiment-5ed9dce4cc2a6a04",
+      "message_ids": [
+        "msg-02-009",
+        "msg-02-012"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-03-0015",
+        "assert-03-0020"
+      ],
+      "contradiction_kind": "permission_misrepresented_as_demonstration",
+      "eligibility_reason": "Sidecar truth confirms configured permission but rejects the positive demonstrated-capability assertion; no matching same-agent invocation is recorded.",
+      "experiment_id": "experiment-5ed9dce4cc2a6a04",
+      "message_ids": [
+        "msg-03-009",
+        "msg-03-012"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-04-0015",
+        "assert-04-0020"
+      ],
+      "contradiction_kind": "permission_misrepresented_as_demonstration",
+      "eligibility_reason": "Sidecar truth confirms configured permission but rejects the positive demonstrated-capability assertion; no matching same-agent invocation is recorded.",
+      "experiment_id": "experiment-5ed9dce4cc2a6a04",
+      "message_ids": [
+        "msg-04-009",
+        "msg-04-012"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-00-0019",
+        "assert-00-0021"
+      ],
+      "contradiction_kind": "permission_misrepresented_as_demonstration",
+      "eligibility_reason": "Sidecar truth confirms configured permission but rejects the positive demonstrated-capability assertion; no matching same-agent invocation is recorded.",
+      "experiment_id": "experiment-625a26824e9fb307",
+      "message_ids": [
+        "msg-00-011",
+        "msg-00-013"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-01-0019",
+        "assert-01-0021"
+      ],
+      "contradiction_kind": "permission_misrepresented_as_demonstration",
+      "eligibility_reason": "Sidecar truth confirms configured permission but rejects the positive demonstrated-capability assertion; no matching same-agent invocation is recorded.",
+      "experiment_id": "experiment-625a26824e9fb307",
+      "message_ids": [
+        "msg-01-011",
+        "msg-01-013"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-02-0019",
+        "assert-02-0021"
+      ],
+      "contradiction_kind": "permission_misrepresented_as_demonstration",
+      "eligibility_reason": "Sidecar truth confirms configured permission but rejects the positive demonstrated-capability assertion; no matching same-agent invocation is recorded.",
+      "experiment_id": "experiment-625a26824e9fb307",
+      "message_ids": [
+        "msg-02-011",
+        "msg-02-013"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-03-0019",
+        "assert-03-0021"
+      ],
+      "contradiction_kind": "permission_misrepresented_as_demonstration",
+      "eligibility_reason": "Sidecar truth confirms configured permission but rejects the positive demonstrated-capability assertion; no matching same-agent invocation is recorded.",
+      "experiment_id": "experiment-625a26824e9fb307",
+      "message_ids": [
+        "msg-03-011",
+        "msg-03-013"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-04-0019",
+        "assert-04-0021"
+      ],
+      "contradiction_kind": "permission_misrepresented_as_demonstration",
+      "eligibility_reason": "Sidecar truth confirms configured permission but rejects the positive demonstrated-capability assertion; no matching same-agent invocation is recorded.",
+      "experiment_id": "experiment-625a26824e9fb307",
+      "message_ids": [
+        "msg-04-011",
+        "msg-04-013"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-00-0011",
+        "assert-00-0020"
+      ],
+      "contradiction_kind": "permission_misrepresented_as_demonstration",
+      "eligibility_reason": "Sidecar truth confirms configured permission but rejects the positive demonstrated-capability assertion; no matching same-agent invocation is recorded.",
+      "experiment_id": "experiment-788c7a0b765bb377",
+      "message_ids": [
+        "msg-00-007",
+        "msg-00-012"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-01-0011",
+        "assert-01-0020"
+      ],
+      "contradiction_kind": "permission_misrepresented_as_demonstration",
+      "eligibility_reason": "Sidecar truth confirms configured permission but rejects the positive demonstrated-capability assertion; no matching same-agent invocation is recorded.",
+      "experiment_id": "experiment-788c7a0b765bb377",
+      "message_ids": [
+        "msg-01-007",
+        "msg-01-012"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-02-0011",
+        "assert-02-0020"
+      ],
+      "contradiction_kind": "permission_misrepresented_as_demonstration",
+      "eligibility_reason": "Sidecar truth confirms configured permission but rejects the positive demonstrated-capability assertion; no matching same-agent invocation is recorded.",
+      "experiment_id": "experiment-788c7a0b765bb377",
+      "message_ids": [
+        "msg-02-007",
+        "msg-02-012"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-03-0011",
+        "assert-03-0020"
+      ],
+      "contradiction_kind": "permission_misrepresented_as_demonstration",
+      "eligibility_reason": "Sidecar truth confirms configured permission but rejects the positive demonstrated-capability assertion; no matching same-agent invocation is recorded.",
+      "experiment_id": "experiment-788c7a0b765bb377",
+      "message_ids": [
+        "msg-03-007",
+        "msg-03-012"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-04-0011",
+        "assert-04-0020"
+      ],
+      "contradiction_kind": "permission_misrepresented_as_demonstration",
+      "eligibility_reason": "Sidecar truth confirms configured permission but rejects the positive demonstrated-capability assertion; no matching same-agent invocation is recorded.",
+      "experiment_id": "experiment-788c7a0b765bb377",
+      "message_ids": [
+        "msg-04-007",
+        "msg-04-012"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-00-0017",
+        "assert-00-0021"
+      ],
+      "contradiction_kind": "permission_misrepresented_as_demonstration",
+      "eligibility_reason": "Sidecar truth confirms configured permission but rejects the positive demonstrated-capability assertion; no matching same-agent invocation is recorded.",
+      "experiment_id": "experiment-e01d9bfcdbc26996",
+      "message_ids": [
+        "msg-00-010",
+        "msg-00-013"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-01-0017",
+        "assert-01-0021"
+      ],
+      "contradiction_kind": "permission_misrepresented_as_demonstration",
+      "eligibility_reason": "Sidecar truth confirms configured permission but rejects the positive demonstrated-capability assertion; no matching same-agent invocation is recorded.",
+      "experiment_id": "experiment-e01d9bfcdbc26996",
+      "message_ids": [
+        "msg-01-010",
+        "msg-01-013"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-02-0017",
+        "assert-02-0021"
+      ],
+      "contradiction_kind": "permission_misrepresented_as_demonstration",
+      "eligibility_reason": "Sidecar truth confirms configured permission but rejects the positive demonstrated-capability assertion; no matching same-agent invocation is recorded.",
+      "experiment_id": "experiment-e01d9bfcdbc26996",
+      "message_ids": [
+        "msg-02-010",
+        "msg-02-013"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-03-0017",
+        "assert-03-0021"
+      ],
+      "contradiction_kind": "permission_misrepresented_as_demonstration",
+      "eligibility_reason": "Sidecar truth confirms configured permission but rejects the positive demonstrated-capability assertion; no matching same-agent invocation is recorded.",
+      "experiment_id": "experiment-e01d9bfcdbc26996",
+      "message_ids": [
+        "msg-03-010",
+        "msg-03-013"
+      ]
+    },
+    {
+      "assertion_ids": [
+        "assert-04-0017",
+        "assert-04-0021"
+      ],
+      "contradiction_kind": "permission_misrepresented_as_demonstration",
+      "eligibility_reason": "Sidecar truth confirms configured permission but rejects the positive demonstrated-capability assertion; no matching same-agent invocation is recorded.",
+      "experiment_id": "experiment-e01d9bfcdbc26996",
+      "message_ids": [
+        "msg-04-010",
+        "msg-04-013"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "assertions_evaluated": 33,
+  "cross_message_finding_count": 2,
+  "detector_outcome_counts": {
+    "CONTRADICTED": 0,
+    "INSUFFICIENT_EVIDENCE": 27,
+    "SUPPORTED": 1,
+    "UNSUPPORTED": 5
+  },
+  "evidence_association_failures": [
+    {
+      "assertion_id": "assert-00-0000",
+      "evidence_id": "identity-00-00",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-00-0002",
+      "evidence_id": "identity-00-01",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-00-0004",
+      "evidence_id": "identity-00-02",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-00-0006",
+      "evidence_id": "identity-00-03",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-00-0021",
+      "evidence_id": "evi-00-0013",
+      "reason": "configured_permission evidence does not establish CAPABILITY.",
+      "status": "evidence_not_relevant"
+    },
+    {
+      "assertion_id": "assert-00-0008",
+      "evidence_id": "identity-00-04",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-00-0026",
+      "evidence_id": "evi-00-0015",
+      "reason": "configured_permission evidence does not establish TOOL_USAGE.",
+      "status": "evidence_not_relevant"
+    },
+    {
+      "assertion_id": "assert-00-0031",
+      "evidence_id": "evi-00-0015",
+      "reason": "The assertion misrepresents the referenced evidence source.",
+      "status": "evidence_relationship_mismatch"
+    }
+  ],
+  "evidence_association_status_counts": {
+    "evidence_not_relevant": 2,
+    "evidence_relationship_mismatch": 1,
+    "scope_mismatch": 5,
+    "valid": 21
+  },
+  "evidence_records_verified": 21,
+  "evidence_verification_failures": [],
+  "evidence_verification_status_counts": {
+    "valid": 21
+  },
+  "experiment_id": "experiment-4d705276c60aa469",
+  "now_unix_seconds": 1700000015,
+  "seed": 9100,
+  "traces_loaded": 1
+}

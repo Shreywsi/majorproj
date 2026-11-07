@@ -1,0 +1,115 @@
+{
+  "agent_count": 5,
+  "behavior_assignments_by_seed": {
+    "9100": [
+      "HONEST_AGENT",
+      "FALSE_REPORTING_AGENT",
+      "IDENTITY_MISMATCH_AGENT",
+      "CAPABILITY_EXAGGERATION_AGENT",
+      "EVIDENCE_MISREPRESENTATION_AGENT"
+    ],
+    "9101": [
+      "FALSE_REPORTING_AGENT",
+      "IDENTITY_MISMATCH_AGENT",
+      "CAPABILITY_EXAGGERATION_AGENT",
+      "EVIDENCE_MISREPRESENTATION_AGENT",
+      "HONEST_AGENT"
+    ],
+    "9102": [
+      "IDENTITY_MISMATCH_AGENT",
+      "CAPABILITY_EXAGGERATION_AGENT",
+      "EVIDENCE_MISREPRESENTATION_AGENT",
+      "HONEST_AGENT",
+      "FALSE_REPORTING_AGENT"
+    ],
+    "9103": [
+      "CAPABILITY_EXAGGERATION_AGENT",
+      "EVIDENCE_MISREPRESENTATION_AGENT",
+      "HONEST_AGENT",
+      "FALSE_REPORTING_AGENT",
+      "IDENTITY_MISMATCH_AGENT"
+    ],
+    "9104": [
+      "EVIDENCE_MISREPRESENTATION_AGENT",
+      "HONEST_AGENT",
+      "FALSE_REPORTING_AGENT",
+      "IDENTITY_MISMATCH_AGENT",
+      "CAPABILITY_EXAGGERATION_AGENT"
+    ]
+  },
+  "execution_mode": "deterministic scripted agents; controlled local simulation",
+  "legacy_adapter_signal_mapping": {
+    "R0": "unchanged legacy random policy",
+    "R1": "smoothed rate of prior self-reported RECORDED tool execution",
+    "R2-R8": "unchanged legacy policies updated with system-attested detector outcome means: SUPPORTED=1, CONTRADICTED=0, UNSUPPORTED/INSUFFICIENT_EVIDENCE=0.5",
+    "attestation_limit": "The signature authenticates the detector-derived summary, not objective truth."
+  },
+  "output_root": "/Users/shreyasisoumya/Desktop/router_testbed/data/controlled/stage9_routing_20261107",
+  "scenario_order_by_seed": {
+    "9100": [
+      "arithmetic",
+      "local_lookup",
+      "authorized_tool",
+      "relay",
+      "missing_lookup"
+    ],
+    "9101": [
+      "local_lookup",
+      "authorized_tool",
+      "relay",
+      "missing_lookup",
+      "arithmetic"
+    ],
+    "9102": [
+      "authorized_tool",
+      "relay",
+      "missing_lookup",
+      "arithmetic",
+      "local_lookup"
+    ],
+    "9103": [
+      "relay",
+      "missing_lookup",
+      "arithmetic",
+      "local_lookup",
+      "authorized_tool"
+    ],
+    "9104": [
+      "missing_lookup",
+      "arithmetic",
+      "local_lookup",
+      "authorized_tool",
+      "relay"
+    ]
+  },
+  "seeds": [
+    9100,
+    9101,
+    9102,
+    9103,
+    9104
+  ],
+  "stage": 9,
+  "stage8_results_preserved": true,
+  "strategies": [
+    "R0",
+    "R1",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "R7",
+    "R8",
+    "trust_aware"
+  ],
+  "tamas_status": "INSUFFICIENT_EVIDENCE_NO_CLAIMS_AVAILABLE",
+  "tasks_per_strategy": 25,
+  "weights": {
+    "assertion_reliability": 0.4,
+    "cross_message_consistency": 0.15,
+    "evidence_coverage": 0.1,
+    "evidence_integrity": 0.2,
+    "identity_binding": 0.15
+  }
+}

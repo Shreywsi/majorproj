@@ -1,0 +1,83 @@
+{
+  "conclusion": "Original Stage 7 seeds preserve scenario order, behavior-to-agent-slot assignment, agent participation order, and normalized message/claim template content. Literal task/agent identifiers embedded in messages and scopes change. Event type/source/status/tool/sequence trace structure is invariant, while trace config hashes change. Evidence cryptographic values and signatures are seed-derived and differ. No stochastic variation was observed. The Stage 8 cyclic rotations intentionally change behavior-to-slot assignments and are controlled paired interventions, not stochastic replicates.",
+  "confidence_intervals": "Not estimated: the five rotations are designed interventions and the three Stage 7 seeds are template replications, not exchangeable independent task samples.",
+  "controlled_rotations": [
+    {
+      "agent_slot_behavior_order": "HONEST_AGENT|FALSE_REPORTING_AGENT|IDENTITY_MISMATCH_AGENT|CAPABILITY_EXAGGERATION_AGENT|EVIDENCE_MISREPRESENTATION_AGENT",
+      "condition": "cyclic_behavior_rotation",
+      "condition_type": "controlled behavior-to-slot reassignment; not a stochastic replicate",
+      "run": "rotation_0",
+      "scenario_order": "arithmetic|local_lookup|authorized_tool|relay|missing_lookup",
+      "seed": 810
+    },
+    {
+      "agent_slot_behavior_order": "FALSE_REPORTING_AGENT|IDENTITY_MISMATCH_AGENT|CAPABILITY_EXAGGERATION_AGENT|EVIDENCE_MISREPRESENTATION_AGENT|HONEST_AGENT",
+      "condition": "cyclic_behavior_rotation",
+      "condition_type": "controlled behavior-to-slot reassignment; not a stochastic replicate",
+      "run": "rotation_1",
+      "scenario_order": "arithmetic|local_lookup|authorized_tool|relay|missing_lookup",
+      "seed": 811
+    },
+    {
+      "agent_slot_behavior_order": "IDENTITY_MISMATCH_AGENT|CAPABILITY_EXAGGERATION_AGENT|EVIDENCE_MISREPRESENTATION_AGENT|HONEST_AGENT|FALSE_REPORTING_AGENT",
+      "condition": "cyclic_behavior_rotation",
+      "condition_type": "controlled behavior-to-slot reassignment; not a stochastic replicate",
+      "run": "rotation_2",
+      "scenario_order": "arithmetic|local_lookup|authorized_tool|relay|missing_lookup",
+      "seed": 812
+    },
+    {
+      "agent_slot_behavior_order": "CAPABILITY_EXAGGERATION_AGENT|EVIDENCE_MISREPRESENTATION_AGENT|HONEST_AGENT|FALSE_REPORTING_AGENT|IDENTITY_MISMATCH_AGENT",
+      "condition": "cyclic_behavior_rotation",
+      "condition_type": "controlled behavior-to-slot reassignment; not a stochastic replicate",
+      "run": "rotation_3",
+      "scenario_order": "arithmetic|local_lookup|authorized_tool|relay|missing_lookup",
+      "seed": 813
+    },
+    {
+      "agent_slot_behavior_order": "EVIDENCE_MISREPRESENTATION_AGENT|HONEST_AGENT|FALSE_REPORTING_AGENT|IDENTITY_MISMATCH_AGENT|CAPABILITY_EXAGGERATION_AGENT",
+      "condition": "cyclic_behavior_rotation",
+      "condition_type": "controlled behavior-to-slot reassignment; not a stochastic replicate",
+      "run": "rotation_4",
+      "scenario_order": "arithmetic|local_lookup|authorized_tool|relay|missing_lookup",
+      "seed": 814
+    }
+  ],
+  "original_seed_comparison": {
+    "agent_participation_order_invariant": true,
+    "behavior_assignment_by_agent_slot_invariant": true,
+    "evidence_cryptographic_values_and_signatures_seed_dependent": true,
+    "message_and_claim_templates_equal_after_entity_id_normalization": true,
+    "normalization_note": "Template comparison normalized experiment, task, trace, message, assertion, agent, evidence, issuer, and nonce identifiers; signatures were excluded from semantic comparison.",
+    "scenario_order_invariant": true,
+    "stochastic_variation_observed": false,
+    "trace_config_hash_seed_dependent": true,
+    "trace_event_structure_invariant_for_event_type_source_status_tool_and_sequence": true
+  },
+  "original_stage7_runs": [
+    {
+      "agent_slot_behavior_order": "HONEST_AGENT|FALSE_REPORTING_AGENT|IDENTITY_MISMATCH_AGENT|CAPABILITY_EXAGGERATION_AGENT|EVIDENCE_MISREPRESENTATION_AGENT",
+      "condition": "original_seed",
+      "condition_type": "same scripted template; seed changes identifiers/key material",
+      "run": "seed_701",
+      "scenario_order": "arithmetic|local_lookup|authorized_tool|relay|missing_lookup",
+      "seed": 701
+    },
+    {
+      "agent_slot_behavior_order": "HONEST_AGENT|FALSE_REPORTING_AGENT|IDENTITY_MISMATCH_AGENT|CAPABILITY_EXAGGERATION_AGENT|EVIDENCE_MISREPRESENTATION_AGENT",
+      "condition": "original_seed",
+      "condition_type": "same scripted template; seed changes identifiers/key material",
+      "run": "seed_702",
+      "scenario_order": "arithmetic|local_lookup|authorized_tool|relay|missing_lookup",
+      "seed": 702
+    },
+    {
+      "agent_slot_behavior_order": "HONEST_AGENT|FALSE_REPORTING_AGENT|IDENTITY_MISMATCH_AGENT|CAPABILITY_EXAGGERATION_AGENT|EVIDENCE_MISREPRESENTATION_AGENT",
+      "condition": "original_seed",
+      "condition_type": "same scripted template; seed changes identifiers/key material",
+      "run": "seed_703",
+      "scenario_order": "arithmetic|local_lookup|authorized_tool|relay|missing_lookup",
+      "seed": 703
+    }
+  ]
+}

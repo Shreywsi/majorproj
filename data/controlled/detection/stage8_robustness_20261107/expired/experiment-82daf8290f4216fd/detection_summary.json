@@ -1,0 +1,1421 @@
+{
+  "assertions_evaluated": 165,
+  "cross_message_finding_count": 10,
+  "detector_outcome_counts": {
+    "CONTRADICTED": 1,
+    "INSUFFICIENT_EVIDENCE": 15,
+    "SUPPORTED": 4,
+    "UNSUPPORTED": 145
+  },
+  "evidence_association_failures": [
+    {
+      "assertion_id": "assert-02-0000",
+      "evidence_id": "identity-02-00",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-02-0001",
+      "evidence_id": "evi-02-0000",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-02-0010",
+      "evidence_id": "evi-02-0006",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-02-0011",
+      "evidence_id": "evi-02-0007",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-02-0027",
+      "evidence_id": "evi-02-0007",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-02-0002",
+      "evidence_id": "identity-02-01",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-02-0003",
+      "evidence_id": "evi-02-0001",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-02-0012",
+      "evidence_id": "evi-02-0008",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-02-0013",
+      "evidence_id": "evi-02-0009",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-02-0028",
+      "evidence_id": "evi-02-0009",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-02-0004",
+      "evidence_id": "identity-02-02",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-02-0005",
+      "evidence_id": "evi-02-0002",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-02-0014",
+      "evidence_id": "evi-02-0010",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-02-0015",
+      "evidence_id": "evi-02-0011",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-02-0020",
+      "evidence_id": "evi-02-0005",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-02-0024",
+      "evidence_id": "evi-02-0005",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-02-0029",
+      "evidence_id": "evi-02-0011",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-02-0006",
+      "evidence_id": "identity-02-03",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-02-0007",
+      "evidence_id": "evi-02-0003",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-02-0016",
+      "evidence_id": "evi-02-0012",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-02-0017",
+      "evidence_id": "evi-02-0013",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-02-0021",
+      "evidence_id": "evi-02-0013",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-02-0030",
+      "evidence_id": "evi-02-0013",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-02-0008",
+      "evidence_id": "identity-02-04",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-02-0009",
+      "evidence_id": "evi-02-0004",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-02-0018",
+      "evidence_id": "evi-02-0014",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-02-0019",
+      "evidence_id": "evi-02-0015",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-02-0026",
+      "evidence_id": "evi-02-0015",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-02-0031",
+      "evidence_id": "evi-02-0015",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-03-0000",
+      "evidence_id": "identity-03-00",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-03-0001",
+      "evidence_id": "evi-03-0000",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-03-0010",
+      "evidence_id": "evi-03-0006",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-03-0011",
+      "evidence_id": "evi-03-0007",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-03-0027",
+      "evidence_id": "evi-03-0007",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-03-0002",
+      "evidence_id": "identity-03-01",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-03-0003",
+      "evidence_id": "evi-03-0001",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-03-0012",
+      "evidence_id": "evi-03-0008",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-03-0013",
+      "evidence_id": "evi-03-0009",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-03-0028",
+      "evidence_id": "evi-03-0009",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-03-0004",
+      "evidence_id": "identity-03-02",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-03-0005",
+      "evidence_id": "evi-03-0002",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-03-0014",
+      "evidence_id": "evi-03-0010",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-03-0015",
+      "evidence_id": "evi-03-0011",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-03-0020",
+      "evidence_id": "evi-03-0005",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-03-0024",
+      "evidence_id": "evi-03-0005",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-03-0029",
+      "evidence_id": "evi-03-0011",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-03-0006",
+      "evidence_id": "identity-03-03",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-03-0007",
+      "evidence_id": "evi-03-0003",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-03-0016",
+      "evidence_id": "evi-03-0012",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-03-0017",
+      "evidence_id": "evi-03-0013",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-03-0021",
+      "evidence_id": "evi-03-0013",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-03-0030",
+      "evidence_id": "evi-03-0013",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-03-0008",
+      "evidence_id": "identity-03-04",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-03-0009",
+      "evidence_id": "evi-03-0004",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-03-0018",
+      "evidence_id": "evi-03-0014",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-03-0019",
+      "evidence_id": "evi-03-0015",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-03-0026",
+      "evidence_id": "evi-03-0015",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-03-0031",
+      "evidence_id": "evi-03-0015",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-00-0000",
+      "evidence_id": "identity-00-00",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-00-0001",
+      "evidence_id": "evi-00-0000",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-00-0010",
+      "evidence_id": "evi-00-0006",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-00-0011",
+      "evidence_id": "evi-00-0007",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-00-0027",
+      "evidence_id": "evi-00-0007",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-00-0002",
+      "evidence_id": "identity-00-01",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-00-0003",
+      "evidence_id": "evi-00-0001",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-00-0012",
+      "evidence_id": "evi-00-0008",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-00-0013",
+      "evidence_id": "evi-00-0009",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-00-0028",
+      "evidence_id": "evi-00-0009",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-00-0004",
+      "evidence_id": "identity-00-02",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-00-0005",
+      "evidence_id": "evi-00-0002",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-00-0014",
+      "evidence_id": "evi-00-0010",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-00-0015",
+      "evidence_id": "evi-00-0011",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-00-0020",
+      "evidence_id": "evi-00-0005",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-00-0024",
+      "evidence_id": "evi-00-0005",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-00-0029",
+      "evidence_id": "evi-00-0011",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-00-0006",
+      "evidence_id": "identity-00-03",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-00-0007",
+      "evidence_id": "evi-00-0003",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-00-0016",
+      "evidence_id": "evi-00-0012",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-00-0017",
+      "evidence_id": "evi-00-0013",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-00-0021",
+      "evidence_id": "evi-00-0013",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-00-0030",
+      "evidence_id": "evi-00-0013",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-00-0008",
+      "evidence_id": "identity-00-04",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-00-0009",
+      "evidence_id": "evi-00-0004",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-00-0018",
+      "evidence_id": "evi-00-0014",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-00-0019",
+      "evidence_id": "evi-00-0015",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-00-0026",
+      "evidence_id": "evi-00-0015",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-00-0031",
+      "evidence_id": "evi-00-0015",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-04-0000",
+      "evidence_id": "identity-04-00",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-04-0001",
+      "evidence_id": "evi-04-0000",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-04-0010",
+      "evidence_id": "evi-04-0006",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-04-0011",
+      "evidence_id": "evi-04-0007",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-04-0027",
+      "evidence_id": "evi-04-0007",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-04-0002",
+      "evidence_id": "identity-04-01",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-04-0003",
+      "evidence_id": "evi-04-0001",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-04-0012",
+      "evidence_id": "evi-04-0008",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-04-0013",
+      "evidence_id": "evi-04-0009",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-04-0028",
+      "evidence_id": "evi-04-0009",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-04-0004",
+      "evidence_id": "identity-04-02",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-04-0005",
+      "evidence_id": "evi-04-0002",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-04-0014",
+      "evidence_id": "evi-04-0010",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-04-0015",
+      "evidence_id": "evi-04-0011",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-04-0020",
+      "evidence_id": "evi-04-0005",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-04-0024",
+      "evidence_id": "evi-04-0005",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-04-0029",
+      "evidence_id": "evi-04-0011",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-04-0006",
+      "evidence_id": "identity-04-03",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-04-0007",
+      "evidence_id": "evi-04-0003",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-04-0016",
+      "evidence_id": "evi-04-0012",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-04-0017",
+      "evidence_id": "evi-04-0013",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-04-0021",
+      "evidence_id": "evi-04-0013",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-04-0030",
+      "evidence_id": "evi-04-0013",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-04-0008",
+      "evidence_id": "identity-04-04",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-04-0009",
+      "evidence_id": "evi-04-0004",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-04-0018",
+      "evidence_id": "evi-04-0014",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-04-0019",
+      "evidence_id": "evi-04-0015",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-04-0026",
+      "evidence_id": "evi-04-0015",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-04-0031",
+      "evidence_id": "evi-04-0015",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-01-0000",
+      "evidence_id": "identity-01-00",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-01-0001",
+      "evidence_id": "evi-01-0000",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-01-0010",
+      "evidence_id": "evi-01-0006",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-01-0011",
+      "evidence_id": "evi-01-0007",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-01-0027",
+      "evidence_id": "evi-01-0007",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-01-0002",
+      "evidence_id": "identity-01-01",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-01-0003",
+      "evidence_id": "evi-01-0001",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-01-0012",
+      "evidence_id": "evi-01-0008",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-01-0013",
+      "evidence_id": "evi-01-0009",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-01-0028",
+      "evidence_id": "evi-01-0009",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-01-0004",
+      "evidence_id": "identity-01-02",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-01-0005",
+      "evidence_id": "evi-01-0002",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-01-0014",
+      "evidence_id": "evi-01-0010",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-01-0015",
+      "evidence_id": "evi-01-0011",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-01-0020",
+      "evidence_id": "evi-01-0005",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-01-0024",
+      "evidence_id": "evi-01-0005",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-01-0029",
+      "evidence_id": "evi-01-0011",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-01-0006",
+      "evidence_id": "identity-01-03",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-01-0007",
+      "evidence_id": "evi-01-0003",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-01-0016",
+      "evidence_id": "evi-01-0012",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-01-0017",
+      "evidence_id": "evi-01-0013",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-01-0021",
+      "evidence_id": "evi-01-0013",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-01-0030",
+      "evidence_id": "evi-01-0013",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-01-0008",
+      "evidence_id": "identity-01-04",
+      "reason": "Evidence scope does not match the assertion scope.",
+      "status": "scope_mismatch"
+    },
+    {
+      "assertion_id": "assert-01-0009",
+      "evidence_id": "evi-01-0004",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-01-0018",
+      "evidence_id": "evi-01-0014",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-01-0019",
+      "evidence_id": "evi-01-0015",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-01-0026",
+      "evidence_id": "evi-01-0015",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "assertion_id": "assert-01-0031",
+      "evidence_id": "evi-01-0015",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    }
+  ],
+  "evidence_association_status_counts": {
+    "expired": 120,
+    "scope_mismatch": 25
+  },
+  "evidence_records_verified": 105,
+  "evidence_verification_failures": [
+    {
+      "evidence_id": "evi-00-0000",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-00-0001",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-00-0002",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-00-0003",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-00-0004",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-00-0005",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-00-0006",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-00-0007",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-00-0008",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-00-0009",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-00-0010",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-00-0011",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-00-0012",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-00-0013",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-00-0014",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-00-0015",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-01-0000",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-01-0001",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-01-0002",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-01-0003",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-01-0004",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-01-0005",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-01-0006",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-01-0007",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-01-0008",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-01-0009",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-01-0010",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-01-0011",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-01-0012",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-01-0013",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-01-0014",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-01-0015",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-02-0000",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-02-0001",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-02-0002",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-02-0003",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-02-0004",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-02-0005",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-02-0006",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-02-0007",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-02-0008",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-02-0009",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-02-0010",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-02-0011",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-02-0012",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-02-0013",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-02-0014",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-02-0015",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-03-0000",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-03-0001",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-03-0002",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-03-0003",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-03-0004",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-03-0005",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-03-0006",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-03-0007",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-03-0008",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-03-0009",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-03-0010",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-03-0011",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-03-0012",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-03-0013",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-03-0014",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-03-0015",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-04-0000",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-04-0001",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-04-0002",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-04-0003",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-04-0004",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-04-0005",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-04-0006",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-04-0007",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-04-0008",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-04-0009",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-04-0010",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-04-0011",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-04-0012",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-04-0013",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-04-0014",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "evi-04-0015",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "identity-00-00",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "identity-00-01",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "identity-00-02",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "identity-00-03",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "identity-00-04",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "identity-01-00",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "identity-01-01",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "identity-01-02",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "identity-01-03",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "identity-01-04",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "identity-02-00",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "identity-02-01",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "identity-02-02",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "identity-02-03",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "identity-02-04",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "identity-03-00",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "identity-03-01",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "identity-03-02",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "identity-03-03",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "identity-03-04",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "identity-04-00",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "identity-04-01",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "identity-04-02",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "identity-04-03",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    },
+    {
+      "evidence_id": "identity-04-04",
+      "reason": "Evidence has passed its expiry time.",
+      "status": "expired"
+    }
+  ],
+  "evidence_verification_status_counts": {
+    "expired": 105
+  },
+  "experiment_id": "experiment-82daf8290f4216fd",
+  "now_unix_seconds": 1700090414,
+  "seed": 701,
+  "traces_loaded": 5
+}

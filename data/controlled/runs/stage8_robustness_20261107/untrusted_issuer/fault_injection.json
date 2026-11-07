@@ -1,0 +1,5 @@
+{
+  "case": "untrusted_issuer",
+  "removed_trusted_issuer_id": "identity-registry",
+  "source_run": "data/controlled/runs/stage7d_7e_audit_20261107/seed_701"
+}

@@ -1,0 +1,19 @@
+{
+  "assertions_evaluated": 165,
+  "cross_message_finding_count": 10,
+  "detector_outcome_counts": {
+    "CONTRADICTED": 1,
+    "INSUFFICIENT_EVIDENCE": 135,
+    "SUPPORTED": 4,
+    "UNSUPPORTED": 25
+  },
+  "evidence_records_verified": 105,
+  "evidence_verification_failures": [],
+  "evidence_verification_status_counts": {
+    "valid": 105
+  },
+  "experiment_id": "experiment-1afd45b6e0d57ea7",
+  "now_unix_seconds": 1700004015,
+  "seed": 403,
+  "traces_loaded": 5
+}

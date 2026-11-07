@@ -26,14 +26,16 @@ correctness beyond the simulator's trusted-evaluator assumption.
 - `metrics.py`, `run_experiments.py`, and `analyze.py` provide evaluation and batch analysis.
 - `ldp_layer/` contains the separate contract/provenance prototype.
 - `ForensiQ/` is the earlier Streamlit digital-forensics application. Its UI and evidence backend
-  are not part of the routing algorithms; it is being retained until the research dashboard phase.
+  are separate from the new root-level `app.py` ProvenanceGuard research dashboard.
 - Phase 1–2 hardening isolates the simulator's hidden ground truth, separates agent and router
   random-number streams, introduces a trusted evaluator/public verifier boundary for R2, validates
   run configuration, and tests the R0/R1/R2 foundation.
-- The remaining implementation plan is: (3) verify Bayesian/decay/task-specific R3–R5; (4) validate
-  Sybil/collusion/CUSUM R6–R7; (5) review profile sanitization and all attack models/R8; (6) replace
-  the legacy ForensiQ UI with TrustRoute; (7) integrate experiment graphs/CSV/PDF research reports;
-  (8) run and document the full reproducible evaluation.
+- The Stage 4 TAMAS provenance detector is separate from R0–R8. It checks structured claims against
+  runtime traces and explicitly trusted, signed evidence; current TAMAS traces contain no claims,
+  so this is not yet a benchmark evaluation.
+- Stage 9 adds a separate opt-in trust-aware router and a paired controlled comparison with the
+  unchanged R0–R8 algorithms. The legacy quality/reward simulator and the claim-bearing local
+  simulation remain distinct experimental interfaces.
 
 ## 1. Setup (VS Code, Windows / Linux / Mac)
 
@@ -54,6 +56,7 @@ Python 3.11+ is required.
 | `config.py` | all hyper-parameters, router/attack names | suggested defaults |
 | `agents.py` | honest agents + 7 attacks (+ `drifter` extra) | Alg. 2 |
 | `crypto_ledger.py` | Trusted evaluator attestations and public-key replay / stale / tamper checks | signed record, R2 |
+| `provenance_detector.py` | Stage 4 claim-level evidence, identity, freshness, replay, and trace checks | detector extension |
 | `router.py` | R0..R8 + oracle: scoring, selection, update, CUSUM, clustering | Alg. 3-5 |
 | `simulate.py` | main loop, optional LDP contract reroute | Alg. 1 |
 | `metrics.py` | ASR, dQ, FAR, detection latency, recovery time, overhead | Metrics |
@@ -187,11 +190,82 @@ re-fetched unless `--force` requests replacing all local files:
 ```
 
 The preview loads one actual benign and one actual attack record, preserving each original query
-and agent roster. It emits only a deterministic orchestration schedule for Magentic-One,
-Round-Robin, or Swarm. It **does not** generate agent replies, execute recorded tool calls, classify
-the attack, produce ARIA outcomes, or claim benchmark performance. The original JSON supplies no
-per-record interaction traces. This boundary prevents a local dry run from being mistaken for an
-LLM execution or fabricated experimental result.
+and agent roster. It emits only a deterministic orchestration schedule and does not claim benchmark
+performance. The source JSON contains no per-record model interaction traces.
+
+Stage 3 adds a deterministic orchestration simulator using only a detector-safe projection and
+inert local adapters for the 33 catalogued Finance tool definitions. Run a small validation pair:
+
+```bash
+.venv/bin/python run_tamas_execution.py \
+  --mode round_robin --seed 19 \
+  --out data/tamas/runs/stage3_validation.jsonl
+```
+
+The JSONL trace and separate evaluator-only mapping sidecar are stored under the ignored local TAMAS
+directory by default. Tool events are marked `local_simulation` / `simulated_response`; they do not
+execute upstream Python, contact external services, or make financial changes. Agent messages are not
+generated, and task completion remains `not_evaluated`. Magentic-One, Round-Robin, and Swarm modes
+are orchestration-shape approximations, not faithful AutoGen implementations. The Stage 2 schema and
+Stage 3 execution design are documented in
+[TAMAS_STAGE2_EXECUTION_DESIGN.md](./docs/TAMAS_STAGE2_EXECUTION_DESIGN.md).
+
+### Stage 4: provenance-claim detection
+
+The separate [`provenance_detector.py`](./provenance_detector.py) module accepts detector-safe task
+inputs, validated traces, assessment-free claim projections, and assertion-bound signed evidence.
+It does not read TAMAS labels or evaluator sidecars and does not modify R0–R8. Signatures establish
+integrity and issuer authenticity under the configured key policy, not objective truth. Missing
+evidence is reported as `INSUFFICIENT_EVIDENCE`, not dishonesty. Current Stage 3 traces contain no
+structured claims, so they produce no claim findings and leave their agents unassessed.
+
+Run the detector's synthetic rule tests and its benign/adversarial Stage 3 JSONL integration check:
+
+```bash
+.venv/bin/python -m pytest -q tests/test_provenance_detector.py
+```
+
+For application code, construct `DetectorTaskInput` at runtime, convert each
+`ProvenanceClaim` with `.detector_view()`, configure the trusted issuer public keys, and call
+`ProvenanceDetector.detect_jsonl(trace_path, task_input, trace_id, claim_inputs,
+signed_evidence=..., now=...)`. Keep a caller-managed `seen_evidence_ids` set across calls if
+cross-run replay detection is required. The Stage 5 CLI wrapper is documented below; the current
+trace files contain no genuine claims and the repository has no production issuer/key policy.
+See [STAGE4_PROVENANCE_DETECTOR.md](./STAGE4_PROVENANCE_DETECTOR.md) for rule semantics, synthetic
+scenarios, source limitations, and the evidence required before benchmark evaluation.
+
+### Stage 5: run detection over Stage 3 traces
+
+The integration runner [run_tamas_detection.py](./run_tamas_detection.py) loads validated trace
+JSONL and only the explicitly supplied claim JSONL. It never opens the evaluator sidecar. Omit
+`--claims` when no claims are available; the report will say `NO_CLAIMS_AVAILABLE` rather than
+invent findings or imply successful detection:
+
+```bash
+.venv/bin/python run_tamas_detection.py \
+  --traces data/tamas/runs/stage3_validation.jsonl \
+  --out data/tamas/detection/stage5_no_claims.json
+```
+
+For pipeline-only testing, use the explicitly synthetic example claims in
+[`tests/fixtures/stage5_synthetic_claims.jsonl`](./tests/fixtures/stage5_synthetic_claims.jsonl).
+Those are not TAMAS annotations or genuine agent claims. The runner format requires a
+detector-safe task projection with each trace's explicit claims; see
+[STAGE5_DETECTOR_INTEGRATION.md](./STAGE5_DETECTOR_INTEGRATION.md) for the format, full workflow,
+report fields, and limitations.
+
+### ProvenanceGuard dashboard
+
+Launch the local research dashboard with:
+
+```bash
+.venv/bin/streamlit run app.py
+```
+
+It reads existing TAMAS traces, Stage 5 JSON reports, TAMAS Finance records, and R0–R8 result CSVs.
+The Experiment Runner calls the existing deterministic local execution API. It does not generate
+LLM conversations or execute external tools. Synthetic Stage 5 fixture findings are labelled as
+controlled synthetic tests, and TAMAS record categories are not presented as agent-level truth.
 
 ### Evaluation and experiment design
 
@@ -245,10 +319,96 @@ Keep dataset inputs, routing, detection, and evaluation separate:
   dependencies, safe tool adapters, model prompts/configuration, and authorized credentials. No
   credentials are included here and the dataset tools are not executed.
 
-Implementation roadmap: (1) loader, schema validation, and source-backed statistics are implemented;
-(2) a real-record offline scheduling preview is implemented, while actual agent execution remains
-blocked on a safe execution backend and model configuration; (3) implement trace-based detection
-and evaluate against source labels; (4–6) integrate R0–R8 using only runtime-available evidence;
-(7) add quality inflation as a separate experiment; (8) implement validated detection, routing, and
-ARIA/ERS metrics; (9) compare repeated paired runs and build the dashboard/reports. Do not report
-the synthetic simulator's results as TAMAS results.
+Implementation status: the loader, schemas, offline preview, controlled local execution engine,
+Stage 4 rule-based provenance detector, Stage 5 trace integration runner, and ProvenanceGuard
+dashboard MVP are implemented.
+Stage 7A claim-bearing message schemas and Stage 7B runtime evidence authority/identity-key
+registration contracts are also implemented. Stage 7C adds deterministic local claim-bearing
+agents, safe task scenarios, signed runtime evidence, and separate evaluator sidecars. Stage 7D
+validates those runtime inputs, verifies Stage 7B evidence, invokes the unchanged Stage 4 detector,
+and writes separate assertion findings; cross-message contradictions are saved separately. Stage
+7E evaluates those outputs against evaluator-only sidecars without exposing labels to detection.
+Run the controlled simulation with `.venv/bin/python run_claim_bearing_experiment.py`; see
+[STAGE7C_CLAIM_BEARING_EXPERIMENT_ENGINE.md](./STAGE7C_CLAIM_BEARING_EXPERIMENT_ENGINE.md) for
+options and output boundaries.
+
+### Stage 7D: detection and cross-message analysis
+
+```bash
+.venv/bin/python run_claim_bearing_detection.py \
+  --traces data/controlled/runs/demo/EXPERIMENT.traces.jsonl \
+  --messages data/controlled/runs/demo/EXPERIMENT.messages.jsonl \
+  --claims data/controlled/runs/demo/EXPERIMENT.claims.jsonl \
+  --evidence data/controlled/runs/demo/EXPERIMENT.evidence.jsonl \
+  --trust-policy data/controlled/runs/demo/EXPERIMENT.trust.json
+```
+
+Replace `EXPERIMENT` and the input directory with the paths printed by the Stage 7C runner.
+Findings are written under `data/controlled/detection/EXPERIMENT/`; Stage 4 outcomes remain
+`SUPPORTED`, `UNSUPPORTED`, `CONTRADICTED`, and `INSUFFICIENT_EVIDENCE`. Cross-message findings
+are in `cross_message_findings.jsonl`, separate from primary detector findings. The runner does
+not accept or read an evaluator sidecar.
+
+### Stage 7E: independent evaluation
+
+```bash
+.venv/bin/python run_claim_bearing_evaluation.py \
+  --detector-findings data/controlled/detection/EXPERIMENT/detector_findings.jsonl \
+  --cross-message-findings data/controlled/detection/EXPERIMENT/cross_message_findings.jsonl \
+  --ground-truth data/controlled/runs/demo/EXPERIMENT.evaluator.jsonl
+```
+
+Evaluation reports assertion-level binary metrics, inconclusive ground truth separately, the
+four-outcome comparison, results grouped by claim type/agent behavior/scenario/seed, evidence
+verification failures, and cross-message counts. A `CONTRADICTED` prediction alone is a binary
+positive for a false assertion; unsupported and insufficient evidence do not establish that a
+claim is false. Controlled synthetic outcomes are not TAMAS record-level evaluations.
+
+Security and evaluation limitations: signatures establish integrity and trusted-issuer identity,
+not objective truth. The local simulation does not perform external tool calls; simulated
+invocation is not evidence of actual external execution. The existing Stage 4 detector cannot
+consume the Stage 7B signed payload format directly, so Stage 7B verification gates the adapter
+and only supported evidence types are mapped into Stage 4 inputs. Weak detector recall is reported
+as observed; it is not repaired with evaluator labels. Agent summaries count false assertions and
+do not label an agent malicious. See
+[STAGE7D_DETECTOR_AND_CROSS_MESSAGE_INTEGRATION.md](./STAGE7D_DETECTOR_AND_CROSS_MESSAGE_INTEGRATION.md)
+and [STAGE7E_INDEPENDENT_EVALUATION.md](./STAGE7E_INDEPENDENT_EVALUATION.md) for the details.
+
+### Stage 9: trust-aware routing comparison
+
+The final Stage 9 experiment connects runtime evidence, assertion-level detection, historical trust
+assessment, capability-gated operator selection, local task execution, and evaluator-only
+post-hoc assessment. It compares R0–R8 with `trust_aware` on the same deterministic scripted task
+configurations. The R0–R8 algorithms remain unchanged; their legacy numeric-profile interface is
+adapted as described in
+[STAGE9_TRUST_SCORING_AND_ROUTING.md](./STAGE9_TRUST_SCORING_AND_ROUTING.md). This adapter-based
+controlled simulation is not an independent stochastic trial or a rerun of the original
+continuous-reward benchmark.
+
+Reproduce the paired Stage 9 runs and final validation with a new output directory:
+
+```bash
+.venv/bin/python run_stage9_routing_experiment.py \
+  --seeds 9100 9101 9102 9103 9104 \
+  --out-dir data/controlled/stage9_routing_reproduction_01
+.venv/bin/python -m pytest -q
+.venv/bin/python -m compileall -q .
+git diff --check
+.venv/bin/streamlit run app.py
+```
+
+The experiment runner refuses to overwrite an existing output directory. Change the output path
+for subsequent runs. In the dashboard, open **Trust-Aware Routing Evaluation** to view the
+generated Stage 9 tables. Detector metrics, cross-message metrics, routing outcomes, and TAMAS
+integration status are separate. The outputs describe scripted local simulation only: there is no
+actual LLM conversation or external tool call. Five deterministic seed/configuration rotations
+are not independent stochastic samples, and the scenario-defined task success rate is 80% for
+every strategy.
+
+The TAMAS Finance sample remains a separate record-level integration containing 70 records and no
+claim-bearing agent executions. It provides no per-agent trust labels, so the correct status is
+`INSUFFICIENT_EVIDENCE_NO_CLAIMS_AVAILABLE`; no claims, trust histories, or TAMAS routing results
+are fabricated. Actual deployed-agent execution, deployment-backed identity verification,
+TAMAS claim-level detector evaluation, quality-inflation experiments, and ARIA/ERS measurements
+remain unavailable. Do not report synthetic detector outputs or safe-simulator results as TAMAS
+benchmark results.

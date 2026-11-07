@@ -1,0 +1,74 @@
+{
+  "binary": {
+    "inconclusive_ground_truth_excluded": true,
+    "matrix": {
+      "actual_false": {
+        "predicted_false": 1,
+        "predicted_not_false": 100
+      },
+      "actual_truthful": {
+        "predicted_false": 0,
+        "predicted_not_false": 718
+      }
+    },
+    "negative_ground_truth": "truthful",
+    "negative_prediction": "SUPPORTED, UNSUPPORTED, or INSUFFICIENT_EVIDENCE",
+    "positive_ground_truth": "false",
+    "positive_prediction": "CONTRADICTED"
+  },
+  "experiment_ids": [
+    "experiment-1e4bd7230a535999",
+    "experiment-216b6d73f0ef78ac",
+    "experiment-24a49f8175b91a6a",
+    "experiment-3809402d997686b1",
+    "experiment-3909b96c0e81753c",
+    "experiment-434ef29ff80814af",
+    "experiment-47824be5ca940d2f",
+    "experiment-4bcd8ae5ed6bfa33",
+    "experiment-4d705276c60aa469",
+    "experiment-4e7478571884c51f",
+    "experiment-6daebd4735fca148",
+    "experiment-74bf438bc99e4c17",
+    "experiment-7e0cc9011a11dccc",
+    "experiment-84f0233f78fcbf39",
+    "experiment-89e0c409f56a33fa",
+    "experiment-91ab4f2e98d581b0",
+    "experiment-932dd31552247084",
+    "experiment-997cba65936247e3",
+    "experiment-9e2f28c580be0c45",
+    "experiment-a1b7167a2787fb08",
+    "experiment-a46b9c7c2bc61314",
+    "experiment-abfb5a312aafaa8a",
+    "experiment-bb19f7f2f3ba0d42",
+    "experiment-c874195ecae063c0",
+    "experiment-f93417db5dee203d"
+  ],
+  "outcome_comparison": {
+    "ground_truth_to_detector_outcomes": {
+      "false": {
+        "CONTRADICTED": 1,
+        "INSUFFICIENT_EVIDENCE": 75,
+        "SUPPORTED": 0,
+        "UNSUPPORTED": 25
+      },
+      "inconclusive": {
+        "CONTRADICTED": 0,
+        "INSUFFICIENT_EVIDENCE": 0,
+        "SUPPORTED": 0,
+        "UNSUPPORTED": 0
+      },
+      "truthful": {
+        "CONTRADICTED": 0,
+        "INSUFFICIENT_EVIDENCE": 598,
+        "SUPPORTED": 20,
+        "UNSUPPORTED": 100
+      }
+    },
+    "mapping": {
+      "binary_negative_prediction": "SUPPORTED, UNSUPPORTED, and INSUFFICIENT_EVIDENCE; a false claim with either latter outcome is a false negative, not proven truthful.",
+      "binary_positive_prediction": "CONTRADICTED only",
+      "ground_truth_label": "truthful/false are derived from matches_expected when present; explicit ground_truth_label takes precedence; absent/ambiguous labels are inconclusive.",
+      "inconclusive_ground_truth": "Reported separately and excluded from TP/FP/TN/FN denominators."
+    }
+  }
+}
